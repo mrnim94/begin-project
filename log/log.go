@@ -3,7 +3,7 @@ package log
 import (
 	"encoding/json"
 	"github.com/labstack/echo/v4"
-	rotatelogs "github.com/lestrrat-go/file-rotatelogs"
+	rotatelogs "github.com/mrnim94/file-rotatelogs"
 	"io"
 	"os"
 	"runtime"
