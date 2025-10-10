@@ -166,7 +166,7 @@ func Printf(format string, i ...interface{}) {
 }
 
 // Debug output message of debug level
-func Debug(i ...interface{}) {
+func  {
 	_, file, line, _ := runtime.Caller(1)
 	singletonLogger.WithFields(logrus.Fields{
 		"file": file,
@@ -373,7 +373,7 @@ func (l *MyLogger) Printj(j log.JSON) {
 
 // Debug output message of debug level
 func (l *MyLogger) Debug(i ...interface{}) {
-	l.Logger.Info(i...)
+	l.Logger.Debug(i...)
 }
 
 // Debugf output format message of debug level
